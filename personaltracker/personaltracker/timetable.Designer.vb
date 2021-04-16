@@ -24,6 +24,7 @@ Partial Class timetable
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -61,11 +62,21 @@ Partial Class timetable
         Me.Button1.Text = "Exit"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(451, 445)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "Exit"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'timetable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1047, 521)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "timetable"
@@ -76,4 +87,5 @@ Partial Class timetable
 
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
