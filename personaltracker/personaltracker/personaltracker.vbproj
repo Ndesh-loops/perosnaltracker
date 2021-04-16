@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{041935CA-3C9E-4E59-B653-2D8387C84C84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>personaltracker.My.MyApplication</StartupObject>
+    <RootNamespace>personaltracker</RootNamespace>
+    <AssemblyName>personaltracker</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>personaltracker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>personaltracker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alltodolist.Designer.vb">
+      <DependentUpon>alltodolist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="alltodolist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="goals.Designer.vb">
+      <DependentUpon>goals.vb</DependentUpon>
+    </Compile>
+    <Compile Include="goals.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lessons.Designer.vb">
+      <DependentUpon>lessons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lessons.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="mymodule.vb" />
+    <Compile Include="timetable.Designer.vb">
+      <DependentUpon>timetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="timetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="todolist.Designer.vb">
+      <DependentUpon>todolist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="todolist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="alltodolist.resx">
+      <DependentUpon>alltodolist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lessons.resx">
+      <DependentUpon>lessons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timetable.resx">
+      <DependentUpon>timetable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="todolist.resx">
+      <DependentUpon>todolist.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Resources\ghg.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cool-pictures-for-nawpic-24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cool-background-hd-images-download-photos-pictures.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cool-nawpic-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cool-pictures-for-nawpic-19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gyy.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\second.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thrird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-space.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ffr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ffty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ffy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fggg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fourth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-space1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ffr1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ffty1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ffy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fggg1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fourth1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gyy1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\second1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thrird1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sltn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1093110112-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\167408.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_4511046-stock-photo-symbol-of-yin-and-yang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\86290.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_47770061-stock-photo-cool-dog.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
