@@ -23,6 +23,7 @@ Partial Class timetable
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -36,7 +37,7 @@ Partial Class timetable
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80.0!))
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(12, 12)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 8
@@ -48,14 +49,24 @@ Partial Class timetable
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(934, 480)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(934, 396)
         Me.TableLayoutPanel1.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(208, 445)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Exit"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'timetable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1047, 521)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "timetable"
         Me.Text = "timetable"
@@ -64,4 +75,5 @@ Partial Class timetable
     End Sub
 
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents Button1 As Button
 End Class
